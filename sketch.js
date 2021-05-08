@@ -17,7 +17,7 @@ var launchForce = 100;
 
 function preload()
 {
-	boy=loadImage("images/boy.png");
+	boy=loadImage("boy.png");
 }
 
 function setup() 
@@ -29,7 +29,7 @@ function setup()
 	stoneObj=new stone(235,420,30); 
 
 	mango1=new mango(1100,100,30);
-  mango2=new mango(1170,130,30);
+        mango2=new mango(1170,130,30);
 	mango3=new mango(1010,140,30);
 	mango4=new mango(1000,70,30);
 	mango5=new mango(1100,70,30);
@@ -44,8 +44,8 @@ function setup()
 	treeObj=new tree(1050,580);
 	groundObject=new ground(width/2,600,width,20);
 
-  //create launcherObject here
-  launcherObject = new launcher(stoneObj.body,{x:235,y:420});
+        //create launcherObject here
+        launcherObject = new launcher(stoneObj.body,{x:235,y:420});
 
 	Engine.run(engine);
 }
